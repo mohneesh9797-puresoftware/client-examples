@@ -10,7 +10,7 @@ services:
 script:
 - if [[ "${TRAVIS_CPU_ARCH}" == "arm64" ]]; then
       sudo apt-get install -y maven openjdk-8-jdk;
-  fi
+  fi 
 - "./.travis/build.sh"
 cache:
   directories:
